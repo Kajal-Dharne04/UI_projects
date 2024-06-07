@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 60%;
+    min-height: 300px;
+    margin: auto;
+    /* border: 1px solid #000; */
+}
+.main-header-div{
+    width: 100%;
+    min-height: 60px;
+}
+.main-header-div .logo{
+    width: 47.5%;
+    min-height: 60px;
+    background-color:#351410;
+    float: left;
+    border-radius: 5PX;
+    -webkit-border-radius: 5PX;
+    -moz-border-radius: 5PX;
+    -ms-border-radius: 5PX;
+    -o-border-radius: 5PX;
+}
+.logo h1{
+    color: white;
+    padding: 10px;
+}
+.main-header-div .menu{
+    width: 51.8%;
+    min-height: 60px;
+    background-color:#351410;
+    padding-top: 15px;
+    float: right;
+    border-radius: 5PX;
+    -webkit-border-radius: 5PX;
+    -moz-border-radius: 5PX;
+    -ms-border-radius: 5PX;
+    -o-border-radius: 5PX;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+
+}
+.row{
+    width: 100%;
+    min-height: 150px;
+    margin-top: 10px;
+}
+.col{
+    width: 21.25%;
+    min-height: 100px;
+    float: left;
+    background-color:#8A4B2C;
+    margin-bottom: 5px;
+}
+.col h4{
+    color: white;
+    text-align: center;
+}
+.col h5{
+    color: white;
+    text-align: center;
+}
+
+.col:nth-child(2){
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.col:nth-child(3){
+    margin-right: 5%;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.col img{
+    width: 100%;
+    height: 100px;
+}
+.main-off{
+    width: 100%;
+    min-height: 100px;
+}
+.off{
+    width: 30%;
+    height: 100px;
+    float: left;
+    background-color: #82A738;
+}
+.main-off h2{
+    color:white;
+    height: 60px;
+    background-color: #D17E46;
+    text-align: center;
+    text-decoration: double;
+    margin: 10px;
+    padding-top:15px;
+    border-radius: 10PX;
+    -webkit-border-radius: 10PX;
+    -moz-border-radius: 10PX;
+    -ms-border-radius: 10PX;
+    -o-border-radius: 10PX;
+}
+.off:nth-child(3){
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.off{
+    color: maroon;
+    text-align: center;
+    padding-top: 15px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.footer h3{
+    color: white;
+    background-color: #351410;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+
+
