@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 100px;
+            background-image: linear-gradient(to left,#ad5389,#3c1053), url(../images/boss.png);
+            background-blend-mode:screen;
+            background-repeat: no-repeat;
+            background-position-y:top ;
+            background-position-x:50px ;
+
+        }
+        section .contents{
+            max-width: 90%;
+            margin-left: 350px;
+
+            
+
+
+        }
+        .contents h1{
+            font-size: 3.5em;
+            margin: 15px;
+            margin-top: 60px;
+            background: -webkit-linear-gradient(#ad5389,#fffff9,#e0eec2);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+        .contents p{
+            font-size: 1.3em;
+            text-align: justify;
+            background: -webkit-linear-gradient(rgb(250, 250, 172),#f3e9ef);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+        section img{
+            position: relative;
+            /* max-width: 750px;
+            margin-top: 170px; */
+            top:100px;
+            z-index: 1;
+            
+        }
+        .wave{
+            /* position: absolute;
+            bottom: 0;
+            left: 0; */
+        }
+        .custom-shape-divider-bottom-1720530052 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1720530052 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 198px;
+}
+
+.custom-shape-divider-bottom-1720530052 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 820px;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+}
+.menu ul li a:hover{
+    border-bottom: 3px solid #CBBBC1;
+
+}
+
+
+/** For mobile devices **/
+/* @media (max-width: 767px) {
+    .custom-shape-divider-bottom-1720530052 svg {
+        width: calc(110% + 1.3px);
+        height: 118px;
+    }
+} */
+    </style>
+</head>
+<body>
+    <section>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <h1>Company Name</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. repudiandae ratione nemo nobis illum id suscipit ipsam dolor tempora soluta voluptate dolorem blanditiis iusto debitis veniam vel, maxime, pariatur ullam 
+                 recusandae tempore?
+            </p>
+        </div>
+        <img src="../images/boss.png">
+
+        <div class="custom-shape-divider-bottom-1720530052">
+            <svg class="wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(86, 81, 81);
+        }
+        .box
+        {
+            width: 80%;
+            min-height: 100vh;
+            display: grid;
+            margin: auto;
+            gap: 10px;
+           
+            grid-template-areas: "header header header"
+                                  "sidebar content1 content1"
+                                   "sidebar content2 content3"
+                                   " footer footer footer";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+
+        }
+        .header
+        {
+            background-image: linear-gradient(to right,#6f0bc0, #368EF0,#a0d9f6);
+             grid-area:header ;
+             border: 3px solid #000;
+        }
+        .sidebar
+        {
+            background-image: linear-gradient(to right,#6f0bc0, #368EF0,#a0d9f6);
+            grid-area:sidebar ;
+            border: 3px solid #000;
+        }
+        .content1
+        {
+            background-image: linear-gradient(to right,#6f0bc0, #368EF0,#a0d9f6);
+             grid-area:content1 ;
+             border: 3px solid #000;
+        }
+        .content2 
+               {
+                background-image: linear-gradient(to right,#6f0bc0, #368EF0,#a0d9f6);
+                grid-area:content2 ; 
+                border: 3px solid #000;
+        }
+        .content3
+        {
+            background-image: linear-gradient(to right,#6f0bc0, #368EF0,#a0d9f6);
+             grid-area:content3 ;
+             border: 3px solid #000;
+        }
+        .footer
+        {
+            background-image: linear-gradient(to right,#6f0bc0, #368EF0,#a0d9f6);
+            grid-area:footer ; 
+             border: 3px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">Box1</div>
+        <div class="sidebar">Box2</div>
+        <div class="content1">Box3</div>
+        <div class="content2">Box4</div>
+        <div class="content3">Box5</div>
+        <div class="footer">Box6</div> 
+    </div> 
+</body>
+</html>

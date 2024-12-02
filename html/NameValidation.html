@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function nameValidate(str)
+        {
+            let b=false;
+           
+        for(let i=0;i<str.length;i++)
+        {
+            if(!((str.charCodeAt(i)>=97&& str.charCodeAt(i)<=122) || (str.charCodeAt(i)>=65&& str.charCodeAt(i)<=90)))
+            
+           {
+                b=true;
+                break;
+           }
+         }
+         if(b){
+            let span=document.getElementById("s");
+            span.innerHTML="invalid name";
+            span.style.color="red";
+         }
+         else{
+            let span=document.getElementById("s");
+            span.innerHTML="";
+            span.style.color="white";
+         }
+        }
+    </script>
+</head>
+<body>
+    <!-- <label for="first">First Name</label> -->
+    <input type="text" name="name" value="" style='width:400px;height:40px;' onkeyup="nameValidate(this.valu)" >
+    <span id="s"></span>
+    
+        
+</body>
+</html>

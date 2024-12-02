@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var first,second,add;
+        function firstVal()
+        {
+            first=prompt("Enter 1st value",0);    
+        }
+        function secondVal()
+        {
+            second=prompt("Enter 2nd value",0);
+        }
+        function add()
+        {
+            let result=confirm("Do you want to calculate addition?");
+            if(result==true)
+        {
+            add=parseInt(first)+parseInt(second);
+              alert("Addition is"+add);
+        }
+        else{
+             alert("No thanks");
+        }
+        }
+    </script>
+    <style>
+        input{
+            background: #e81111;
+            border: none;
+            padding: 10px;
+            color: rgb(234, 247, 247);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" name="btn" value="Accept 1stinput from keyboard" onclick="firstVal()"><br><br>
+    <input type="button" name="btn" value="Accept 2nd input from keyboard" onclick="secondVal()"><br><br>
+    <input type="button" name="btn" value="Show Result" onclick="add()">
+    
+</body>
+</html>

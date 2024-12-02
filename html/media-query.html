@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            
+            width: 500px;
+            min-height: 300px;
+            border: 5px solid #000;
+            margin:50px auto;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .box .b1{
+            flex-basis: 220px;
+            height: 280px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: chartreuse;
+            
+        }
+        .box .b2{
+            flex-basis: 220px;
+            height: 280px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color:#f4f81b;  
+        }
+        @media only screen and (max-width:768px){
+            .box{
+                flex-direction: column;
+                width: 100%;
+            }
+            .box .b1{
+                width: 100%;
+            }
+            .box .b2{
+                width: 100%;
+            }
+        }
+       
+          
+
+          
+            
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="b1">
+            box1
+
+        </div>
+        <div class="b2">
+            
+            box2
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

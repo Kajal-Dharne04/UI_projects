@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+      function validateNumber(str)
+      {let b=false;
+        if(str.length==10 && str.charCodeAt(0)!=48){
+            for(let i=0;i<str.length;i++)
+            { 
+                if(!((str.charCodeAt(i)>=48 && str.charCodeAt(i)<=57))) 
+                {
+                    b=true;
+                    break;
+                }
+            }
+            if(b) {
+                let span=document.getElementById("s");
+                span.innerHTML="Invalid mobile Number";
+                span.style.color="red";
+            }
+            else
+            {
+                let span=document.getElementById("s");
+                span.innerHTML="";
+                span.style.color="white";
+            }
+            }
+        else
+        {
+            let span=document.getElementById("s");
+            span.innerHTML="Number must 10 digit and should not start with 0";
+            span.style.color="red";
+        }
+
+      }
+    
+    </script>
+</head>
+<body>
+    <!-- <label for="phone" >Enter Phone-Number</label> -->
+    <input type="text" name="name" value="" style="width: 600px; height: 40px;" onkeyup="validateNumber(this.value)">
+    <span id="s"></span>
+    
+</body>
+</html>
